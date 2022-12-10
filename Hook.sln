@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{1D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsExample", "examples\FormsExample\FormsExample.csproj", "{693C8A54-2FA1-408B-9896-7CB1E5E9E257}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,12 @@ Global
 		{693C8A54-2FA1-408B-9896-7CB1E5E9E257}.Release|x64.Build.0 = Release|Any CPU
 		{693C8A54-2FA1-408B-9896-7CB1E5E9E257}.Release|x86.ActiveCfg = Release|x86
 		{693C8A54-2FA1-408B-9896-7CB1E5E9E257}.Release|x86.Build.0 = Release|x86
+		{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}.Debug|Any CPU.ActiveCfg = Debug
+		{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}.Debug|x64.ActiveCfg = Debug
+		{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}.Debug|x86.ActiveCfg = Debug
+		{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}.Release|Any CPU.ActiveCfg = Release
+		{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}.Release|x64.ActiveCfg = Release
+		{C4E21AF8-FCC7-483D-86D8-D4CC195598C2}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

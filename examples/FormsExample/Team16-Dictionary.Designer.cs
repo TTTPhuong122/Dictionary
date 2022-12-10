@@ -32,6 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Team16_Dictionary));
             this.cm_trans = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Dictionary = new System.Windows.Forms.Label();
             this.textBoxLog = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,9 +43,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.Dictionary = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.elipseControl1 = new FormsExample.ElipseControl();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -76,6 +76,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dictionary27";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Properties.Resources.icon;
+            this.pictureBox1.Location = new System.Drawing.Point(34, 88);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Javanese Text", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(109, 103);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 41);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Translating Simply";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // Dictionary
+            // 
+            this.Dictionary.AutoSize = true;
+            this.Dictionary.Font = new System.Drawing.Font("Javanese Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dictionary.Location = new System.Drawing.Point(109, 55);
+            this.Dictionary.Name = "Dictionary";
+            this.Dictionary.Size = new System.Drawing.Size(165, 64);
+            this.Dictionary.TabIndex = 9;
+            this.Dictionary.Text = "Dictionary";
+            this.Dictionary.Click += new System.EventHandler(this.Dictionary_Click);
+            // 
             // textBoxLog
             // 
             this.textBoxLog.Location = new System.Drawing.Point(25, 189);
@@ -87,6 +119,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Font = new System.Drawing.Font("Javanese Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(164, 187);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 38);
@@ -99,6 +132,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
             this.button1.Font = new System.Drawing.Font("Javanese Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(289, 189);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 36);
@@ -170,38 +204,6 @@
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // Dictionary
-            // 
-            this.Dictionary.AutoSize = true;
-            this.Dictionary.Font = new System.Drawing.Font("Javanese Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dictionary.Location = new System.Drawing.Point(109, 55);
-            this.Dictionary.Name = "Dictionary";
-            this.Dictionary.Size = new System.Drawing.Size(165, 64);
-            this.Dictionary.TabIndex = 9;
-            this.Dictionary.Text = "Dictionary";
-            this.Dictionary.Click += new System.EventHandler(this.Dictionary_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Javanese Text", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 103);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 41);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Translating Simply";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Properties.Resources.icon;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 88);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // elipseControl1
             // 
             this.elipseControl1.CornerRadius = 20;
@@ -235,9 +237,9 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBoxLog;
-        private FormsExample.ElipseControl elipseControl1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Dictionary;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private FormsExample.ElipseControl elipseControl1;
     }
 }

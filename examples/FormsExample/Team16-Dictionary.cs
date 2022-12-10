@@ -26,8 +26,8 @@ namespace Demo
 
             InitializeComponent();
             textBoxLog.Visible = false;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Padding = new Padding(borderSize);
+            //this.FormBorderStyle = FormBorderStyle.None;
+            //this.Padding = new Padding(borderSize);
             this.BackColor = borderColor;
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
@@ -49,13 +49,12 @@ namespace Demo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Application.Exit();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             SubscribeGlobal();
-            this.Hide();
         }
 
         private void Team16_Dictionary_Closing(object sender, EventArgs e)
